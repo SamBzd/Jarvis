@@ -1,0 +1,29 @@
+# Projets connus
+
+Ce registre contient uniquement des métadonnées partageables. Rechercher l'emplacement courant et ne lire que le bloc correspondant lorsque c'est possible.
+
+<!-- project:jarvis -->
+## Jarvis
+
+- Identifiant : `jarvis`
+- Nature : personnel
+- Organisation : solo
+- Instructions : `AGENTS.md`
+- Remote : non renseigné
+- Dernière session : —
+- Emplacements :
+  - `poste-professionnel-linux` : `/home/sam/jarvis`
+<!-- /project:jarvis -->
+
+<!-- project:agroedge -->
+## AgroEdge
+
+- Identifiant : `agroedge`
+- Nature : professionnel
+- Organisation : solo
+- Instructions : `AGENTS.md`
+- Remote : non renseigné
+- Dernière session : 2026-08-27
+- Emplacements :
+  - `poste-professionnel-linux` : `/home/sam/edge/app/AgroEdge`
+<!-- /project:agroedge -->
