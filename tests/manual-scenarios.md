@@ -33,6 +33,8 @@ Ces scénarios valident les comportements qui dépendent d'une vraie session Cod
 
 ## Synchronisation
 
+- Lancer Codex depuis un projet dont le sandbox ne peut pas écrire dans `~/jarvis`, envoyer « Bonjour Jarvis » et vérifier qu'une approbation ciblée est demandée pour `bash "$HOME/jarvis/scripts/sync.sh"`.
+- Refuser cette approbation et vérifier que Jarvis poursuit avec la mémoire locale, sans tenter de modifier les permissions globales de Codex.
 - Modifier localement le dépôt Jarvis et vérifier que la reprise refuse le pull sans écraser le changement.
 - Retirer temporairement le réseau et vérifier que Jarvis continue avec la mémoire locale en signalant la limite.
 - Récupérer une modification de `AGENTS.md` et vérifier que Jarvis indique qu'elle s'appliquera à la prochaine session.

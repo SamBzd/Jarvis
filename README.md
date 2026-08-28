@@ -21,7 +21,7 @@ Une salutation adressée à Jarvis déclenche une reprise discrète :
 2. Dans un dépôt Git inconnu, Jarvis signale le nouveau projet et attend que Sam choisisse entre audit complet, inspection ciblée ou absence d'exploration.
 3. Hors dépôt Git, Jarvis répond simplement : « Salut Sam, on bosse sur quoi aujourd'hui ? »
 
-La synchronisation du dépôt Jarvis est tentée au début de cette reprise. Elle ne doit jamais écraser un état local, résoudre silencieusement une divergence ou masquer un échec réseau.
+La synchronisation du dépôt Jarvis est tentée au début de cette reprise. Si le sandbox Codex bloque l'écriture Git nécessaire, Jarvis demande une approbation ciblée pour cette seule synchronisation ; il n'élargit jamais les droits globaux par lui-même. Elle ne doit jamais écraser un état local, résoudre silencieusement une divergence ou masquer un échec réseau.
 
 ## Arborescence
 

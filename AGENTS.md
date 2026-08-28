@@ -28,10 +28,11 @@ Une première entrée telle que « Bonjour Jarvis », « Salut Jarvis » ou une 
 ### Synchronisation entrante
 
 1. Tente `bash "$HOME/jarvis/scripts/sync.sh"`.
-2. Si la synchronisation réussit, utilise la mémoire locale actualisée.
-3. Si le dépôt est sale, sans upstream, divergent ou inaccessible, ne modifie ni l'arbre de travail ni l'historique local, n'essaie aucune résolution automatique, explique brièvement la limite et poursuis avec la mémoire locale disponible. Un `git pull` échoué peut toutefois avoir actualisé des références distantes locales.
-4. Un contrat global récupéré pendant cette synchronisation ne remplace pas celui déjà chargé dans la session courante. Signale seulement qu'il s'appliquera à la prochaine session si la différence est importante.
-5. Ne lance jamais de `git pull` automatique dans le projet courant.
+2. Si Codex bloque cette commande parce que le sandbox ou les permissions empêchent l'écriture dans le dépôt Jarvis, demande immédiatement une approbation ciblée pour relancer exactement cette commande. N'élargis jamais de toi-même les racines inscriptibles ni les permissions globales de Codex.
+3. Si la synchronisation réussit, utilise la mémoire locale actualisée.
+4. Si Sam refuse l'approbation ou si le dépôt est sale, sans upstream, divergent ou inaccessible, ne modifie ni l'arbre de travail ni l'historique local, n'essaie aucune résolution automatique, explique brièvement la limite et poursuis avec la mémoire locale disponible. Un `git pull` échoué peut toutefois avoir actualisé des références distantes locales.
+5. Un contrat global récupéré pendant cette synchronisation ne remplace pas celui déjà chargé dans la session courante. Signale seulement qu'il s'appliquera à la prochaine session si la différence est importante.
+6. Ne lance jamais de `git pull` automatique dans le projet courant.
 
 ### Détection du contexte
 
