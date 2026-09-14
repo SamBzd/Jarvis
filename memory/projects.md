@@ -27,3 +27,16 @@ Ce registre contient uniquement des métadonnées partageables. Rechercher l'emp
 - Emplacements :
   - `poste-professionnel-linux` : `/home/sam/edge/app/AgroEdge`
 <!-- /project:agroedge -->
+
+<!-- project:stamp-app -->
+## Stamp App
+
+- Identifiant : `stamp-app`
+- Nature : professionnel
+- Organisation : solo
+- Instructions : `AGENTS.md`
+- Remote : `https://github.com/SamBzd/Stamp-app.git`
+- Dernière session : 2026-09-14
+- Emplacements :
+  - `poste-professionnel-linux` : `/data/shared/projetPerso/Stamp-app`
+<!-- /project:stamp-app -->
