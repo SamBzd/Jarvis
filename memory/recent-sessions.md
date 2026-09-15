@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-15 — stamp-app — Migrations SQLite et PR de revue
+
+- Contexte : Stabilisation de Stamp App sur la branche de migrations SQLite.
+- Réalisé : Framework de migrations, tests CLI, documentation, trois commits et PR #1 créés puis poussés.
+- Décisions : La conversion de la base historique du NAS reste hors périmètre. Les nouvelles features partent de main ; les changements de schéma attendent la fusion des migrations.
+- État : Branche chore/database-migrations propre et synchronisée avec origin. La PR #1 est ouverte, sans merge. La revue Codex GitHub est bloquée par une connexion Codex Cloud à finaliser.
+- Prochaine action : Connecter Codex Cloud à GitHub, relancer la revue de la PR, puis choisir la prochaine feature et créer sa branche depuis main.
+
 ## 2026-09-14 — stamp-app — Stabilisation et socle déployable
 
 - Contexte : Remise à plat demandée avant toute reprise des fonctionnalités et corrections.
