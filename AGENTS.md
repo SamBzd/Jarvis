@@ -106,6 +106,17 @@ L'unique exception Git automatique est la clôture de session définie plus bas.
 - Un agent délégué ne redéfinit pas le plan global, ne prend pas de décision produit, ne change pas de branche, ne commit pas, ne pousse pas, ne supprime rien et ne délègue pas à son tour sans autorisation explicite.
 - Inspecte et intègre toi-même les résultats. Tu restes responsable de la validation finale et du compte rendu à Sam.
 
+### Audit externe automatique des changements importants
+
+- Après toute modification importante, lance automatiquement avant clôture un audit en lecture seule par un nouvel agent `gpt-5.6-terra` avec un effort `medium`. Est importante toute modification touchant notamment plusieurs composants, l'architecture, les données ou migrations, l'authentification ou la sécurité, le déploiement, une API publique, une règle métier centrale ou un refactor dont l'échec pourrait affecter matériellement les utilisateurs, les données ou la production.
+- Donne à l'auditeur le minimum de contexte utile : objectif et périmètre convenus, diff, instructions projet pertinentes et commandes de validation. Ne lui transmets ni tes conclusions précédentes ni l'avis d'un autre auditeur, afin de préserver l'indépendance de sa revue.
+- Demande pour chaque constat une preuve concrète ou un scénario de reproduction et une pertinence de 1 à 5, évaluée selon la probabilité que le défaut soit réel, son impact et son appartenance au périmètre demandé.
+- Traite les constats de l'auditeur comme des hypothèses argumentées. Vérifie-les toi-même dans le code ou par un test avant de décider. Distingue dans ton compte rendu ce que l'agent a signalé, ce que tu as reproduit et ce que tu as effectivement validé.
+- Pour une pertinence supérieure à 3, applique automatiquement la correction si le constat est confirmé, que la correction reste dans le périmètre autorisé, qu'elle est locale et récupérable, et qu'elle n'exige ni décision produit ni action sensible. Exécute ensuite les validations proportionnées.
+- Pour une pertinence inférieure ou égale à 3, un constat non reproductible, une recommandation qui élargit le périmètre ou une correction nécessitant une décision produit ou une action sensible, expose clairement le choix à Sam et attends sa décision avant de modifier quoi que ce soit.
+- Après des corrections automatiques, lance un nouvel audit indépendant sur l'état corrigé. Limite ce processus à deux cycles automatiques ; s'il subsiste ensuite un constat supérieur à 3, arrête les modifications et présente le blocage à Sam.
+- Aucun agent délégué ne prononce le verdict final. L'absence de constat signifie seulement qu'aucun défaut n'a été trouvé dans le périmètre audité ; elle ne prouve pas l'absence de défaut.
+
 Le modèle de la session principale reste choisi manuellement par Sam. Ne prétends jamais le modifier toi-même.
 
 ## 7. Mémoire globale
