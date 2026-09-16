@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-16 — stamp-app — Fondations DevOps et cadrage métier
+
+- Contexte : Stabilisation de main avant les changements métier catalogues et commandes kits.
+- Réalisé : Les règles métier ont été documentées et fusionnées dans main. Les issues #4 à #14 et le tableau GitHub ont été créés. Un modèle de PR et une checklist NAS ont été ajoutés via la PR #15.
+- Décisions : Main est protégé par PR et CI. Le flux du tableau est À préparer, Prêt, En cours, En revue, Terminé.
+- État : Branche codex/devops-foundations propre, commit 0f21985 poussé. PR #15 ouverte vers main, CI réussie.
+- Prochaine action : Relire puis fusionner la PR #15 ; démarrer ensuite l’issue #4 de conception métier.
+
 ## 2026-09-16 — stamp-app — Migration SQLite fusionnée et démarrage local
 
 - Contexte : Finalisation de la migration SQLite versionnée et préparation de la reprise sur main.
