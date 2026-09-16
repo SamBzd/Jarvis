@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-16 — stamp-app — Migration SQLite fusionnée et démarrage local
+
+- Contexte : Finalisation de la migration SQLite versionnée et préparation de la reprise sur main.
+- Réalisé : La PR #1 est fusionnée dans main. La branche chore/database-migrations est conservée. L'application a été lancée localement avec db/dev.db puis arrêtée.
+- Décisions : Les remarques sur les collations et la reconstruction de tables avec clés étrangères sont reconnues mais reportées avant leur premier besoin concret.
+- État : main est synchronisée avec origin/main et l'arbre de travail est propre. Aucun serveur de développement ne tourne.
+- Prochaine action : Créer une branche depuis main pour la prochaine amélioration fonctionnelle, après avoir défini son besoin et sa priorité.
+
 ## 2026-09-15 — stamp-app — Migrations SQLite et PR de revue
 
 - Contexte : Stabilisation de Stamp App sur la branche de migrations SQLite.
