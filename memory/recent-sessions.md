@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-16 — stamp-app — Alignement du backlog après validation métier
+
+- Contexte : Reprise du projet après fusion du cadrage, puis vérification de la cohérence des lots restants.
+- Réalisé : Les onze définitions d’issues ont été relues, corrigées et vérifiées sur GitHub. Un audit indépendant en lecture seule n’a trouvé aucun défaut bloquant.
+- Décisions : Le contrat validé reste la référence des futurs lots. L’intégration des deux lots d’interface reste souple ; aucune nouvelle décision produit.
+- État : Main propre et alignée sur sa référence distante. Aucun changement de code ni nouveau commit. Aucun accès ou changement de production. Les validations portaient sur le backlog, pas sur une implémentation.
+- Prochaine action : Commencer le prochain lot de schéma et d’outillage après instruction de Sam ; conserver les autorisations opérationnelles séparées.
+
 ## 2026-09-16 — stamp-app — Fondations DevOps et cadrage métier
 
 - Contexte : Stabilisation de main avant les changements métier catalogues et commandes kits.
