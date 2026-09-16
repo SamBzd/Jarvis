@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-16 — stamp-app — Issue 5 : schéma cible et import clientes
+
+- Contexte : Implémentation de l’issue 5 sur une branche dédiée, sans intervention sur la base de production.
+- Réalisé : Migration cible, schéma catalogue/kit, snapshots, outil d’import atomique des clientes et documentation livrés.
+- Décisions : Les suppressions physiques sont bloquées ; la création et le règlement complets des kits restent dans l’issue 7.
+- État : Dépôt propre sur main. Le commit bc714f7 est poussé sur codex/issue-5-schema-import-clients ; la PR #17 vers main est ouverte.
+- Prochaine action : Relire puis fusionner la PR #17 ; supprimer sa branche après fusion si elle n’est plus utile.
+
 ## 2026-09-16 — stamp-app — Alignement du backlog après validation métier
 
 - Contexte : Reprise du projet après fusion du cadrage, puis vérification de la cohérence des lots restants.
