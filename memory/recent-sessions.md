@@ -8,6 +8,14 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Contexte : Implémentation de l’issue 5 sur une branche dédiée, sans intervention sur la base de production.
 - Réalisé : Migration cible, schéma catalogue/kit, snapshots, outil d’import atomique des clientes et documentation livrés.
 - Décisions : Les suppressions physiques sont bloquées ; la création et le règlement complets des kits restent dans l’issue 7.
+- État : Dépôt propre sur main, synchronisé au commit de fusion 09339d4. La PR #17 est fusionnée ; la branche dédiée peut être supprimée ultérieurement.
+- Prochaine action : Supprimer la branche codex/issue-5-schema-import-clients si elle n’est plus utile, puis choisir le prochain lot.
+
+## 2026-09-16 — stamp-app — Issue 5 : schéma cible et import clientes
+
+- Contexte : Implémentation de l’issue 5 sur une branche dédiée, sans intervention sur la base de production.
+- Réalisé : Migration cible, schéma catalogue/kit, snapshots, outil d’import atomique des clientes et documentation livrés.
+- Décisions : Les suppressions physiques sont bloquées ; la création et le règlement complets des kits restent dans l’issue 7.
 - État : Dépôt propre sur main. Le commit bc714f7 est poussé sur codex/issue-5-schema-import-clients ; la PR #17 vers main est ouverte.
 - Prochaine action : Relire puis fusionner la PR #17 ; supprimer sa branche après fusion si elle n’est plus utile.
 
