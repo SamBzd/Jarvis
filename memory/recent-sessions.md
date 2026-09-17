@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-17 — stamp-app — Issue 8 — catalogue et archivage
+
+- Contexte : Session Stamp App consacrée à l’issue 8, rebasée après l’intégration des issues 6 et 7.
+- Réalisé : Interface catalogue et archivage clientes livrés ; PR #20 rebasée, conflits documentaires résolus et retours de revue corrigés ; validations locales réussies : 72 tests backend, 5 tests frontend, build Vue et Compose.
+- Décisions : Les retours pertinents ont été corrigés : avertissement de sortie, verrou de défilement partagé, création concurrente et message d’archivage.
+- État : Branche codex/issue-8-interface-catalogues synchronisée avec origin ; .agents/ est non suivie et préexistante.
+- Prochaine action : Revoir puis merger la PR #20 ; démarrer ensuite l’issue 9 depuis main à jour.
+
 ## 2026-09-17 — stamp-app — Issue 7 — commandes kits
 
 - Contexte : Travail sur la branche codex/issue-7-commandes-kits, basée sur l’issue 6.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : La conversion de la base historique du NAS reste hors périmètre. Les nouvelles features partent de main ; les changements de schéma attendent la fusion des migrations.
 - État : Branche chore/database-migrations propre et synchronisée avec origin. La PR #1 est ouverte, sans merge. La revue Codex GitHub est bloquée par une connexion Codex Cloud à finaliser.
 - Prochaine action : Connecter Codex Cloud à GitHub, relancer la revue de la PR, puis choisir la prochaine feature et créer sa branche depuis main.
-
-## 2026-09-14 — stamp-app — Stabilisation et socle déployable
-
-- Contexte : Remise à plat demandée avant toute reprise des fonctionnalités et corrections.
-- Réalisé : Historique Git rationalisé et références utiles conservées. Base de développement portable et déploiement générique validés puis synchronisés.
-- Décisions : main devient la base active ; la production historique reste archivée. Les données réelles et la cible d’exploitation restent hors périmètre.
-- État : main est propre et synchronisée avec origin/main au commit 34df395. Les services de validation sont arrêtés et le volume de test vierge est conservé.
-- Prochaine action : Ajouter des migrations versionnées et des procédures de sauvegarde et restauration, puis une CI et une validation depuis un clone vierge.
 <!-- sessions:end -->
