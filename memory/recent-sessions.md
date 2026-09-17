@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-17 — stamp-app — Issue 6 API catalogues finalisée
+
+- Contexte : Implémentation de l’API sources, tarifs et archivage sur Stamp App.
+- Réalisé : Tarifs en centimes, publication/démotion, archivage clientes/catalogues, tests métier et documentation livrés. Quatre commits poussés sur codex/issue-6-api-catalogues.
+- Décisions : Main reste stable : l’issue 7 a été créée depuis l’issue 6 ; le merge attend l’adaptation de l’interface aux centimes.
+- État : Branche active codex/issue-7-commandes-kits, arbre propre. npm run check, docker compose config et deux audits API indépendants réussis.
+- Prochaine action : Implémenter l’issue 7 : création et validation des commandes kit.
+
 ## 2026-09-16 — stamp-app — Issue 5 : schéma cible et import clientes
 
 - Contexte : Implémentation de l’issue 5 sur une branche dédiée, sans intervention sur la base de production.
