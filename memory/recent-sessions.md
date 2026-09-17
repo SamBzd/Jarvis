@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-17 — stamp-app — Issue 9 commandes livrée et fusionnée
+
+- Contexte : Stamp App, branche main après fusion de la PR #21.
+- Réalisé : L’interface commandes kits et hors-kit de l’issue 9 est intégrée. Les retours Codex et CodeRabbit ont été corrigés : erreurs de détail isolées, fermeture pendant chargement et navigation radio clavier.
+- Décisions : Aucune migration ni déploiement. Le NAS reste hors périmètre.
+- État : main est synchronisée avec origin/main au commit 7a5eb43. Seul .agents/ non suivi, préexistant, reste local.
+- Prochaine action : Recette fonctionnelle sur l’environnement de déploiement avant planification de la livraison v2.
+
 ## 2026-09-17 — stamp-app — Issue 8 — catalogue et archivage
 
 - Contexte : Session Stamp App consacrée à l’issue 8, rebasée après l’intégration des issues 6 et 7.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Les remarques sur les collations et la reconstruction de tables avec clés étrangères sont reconnues mais reportées avant leur premier besoin concret.
 - État : main est synchronisée avec origin/main et l'arbre de travail est propre. Aucun serveur de développement ne tourne.
 - Prochaine action : Créer une branche depuis main pour la prochaine amélioration fonctionnelle, après avoir défini son besoin et sa priorité.
-
-## 2026-09-15 — stamp-app — Migrations SQLite et PR de revue
-
-- Contexte : Stabilisation de Stamp App sur la branche de migrations SQLite.
-- Réalisé : Framework de migrations, tests CLI, documentation, trois commits et PR #1 créés puis poussés.
-- Décisions : La conversion de la base historique du NAS reste hors périmètre. Les nouvelles features partent de main ; les changements de schéma attendent la fusion des migrations.
-- État : Branche chore/database-migrations propre et synchronisée avec origin. La PR #1 est ouverte, sans merge. La revue Codex GitHub est bloquée par une connexion Codex Cloud à finaliser.
-- Prochaine action : Connecter Codex Cloud à GitHub, relancer la revue de la PR, puis choisir la prochaine feature et créer sa branche depuis main.
 <!-- sessions:end -->
