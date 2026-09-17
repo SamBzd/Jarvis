@@ -6,6 +6,14 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 ## 2026-09-17 — stamp-app — Issue 7 — commandes kits
 
 - Contexte : Travail sur la branche codex/issue-7-commandes-kits, basée sur l’issue 6.
+- Réalisé : Le backend commandes kits A/B/C est livré : composition, snapshots, tarifs, rubans, option, suppléments, règlement, suppression, stocks et bilan.
+- Décisions : L’issue 8 partira de l’issue 6 ; l’issue 9 attendra l’intégration de 7 et 8.
+- État : Trois commits sont poussés : 7f9d6f5, aff54d3 et 628ba89. Arbre propre ; npm run check et docker compose config passent. Audit indépendant sans défaut concret.
+- Prochaine action : Créer l’issue 8 depuis 15d43b5 ; préparer l’issue 9 quand les issues 7 et 8 seront intégrées.
+
+## 2026-09-17 — stamp-app — Issue 7 — commandes kits
+
+- Contexte : Travail sur la branche codex/issue-7-commandes-kits, basée sur l’issue 6.
 - Réalisé : Le backend des commandes kits A/B/C est implémenté : composition, snapshots, tarifs, rubans, option, suppléments, règlement et suppression.
 - Décisions : L’issue 8 partira de l’issue 6 ; l’issue 9 attendra l’intégration de 7 et 8.
 - État : Les changements sont non committés. Les contrôles npm run check et docker compose config passent ; l’audit indépendant n’a trouvé aucun défaut concret.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : main devient la base active ; la production historique reste archivée. Les données réelles et la cible d’exploitation restent hors périmètre.
 - État : main est propre et synchronisée avec origin/main au commit 34df395. Les services de validation sont arrêtés et le volume de test vierge est conservé.
 - Prochaine action : Ajouter des migrations versionnées et des procédures de sauvegarde et restauration, puis une CI et une validation depuis un clone vierge.
-
-## 2026-09-14 — stamp-app — Documentation de fondation clarifiée
-
-- Contexte : Reprise d’un projet ancien avant une amélioration à définir, avec priorité à une documentation fiable sans changement fonctionnel.
-- Réalisé : Les essais techniques non validés ont été annulés. La documentation distingue la production, la refonte abandonnée et les informations à confirmer. L’ancien plan a été archivé.
-- Décisions : La branche de production reflète l’installation en service. L’application est locale, utilisée depuis un Mac et hébergée sur un NAS. La base locale est obsolète et doit être préservée.
-- État : La branche documentaire contient des modifications non committées. La base locale reste le seul changement non documentaire et n’a pas été touchée.
-- Prochaine action : Relire puis committer uniquement la documentation, avant de préparer la réunion et l’inspection contrôlée de la production.
 <!-- sessions:end -->
