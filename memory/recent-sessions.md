@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-17 — stamp-app — Issue 10 stocks fusionnée
+
+- Contexte : Stamp App sur main après fusion de la PR #22.
+- Réalisé : Les stocks utilisent les snapshots de commandes, avec provenance historique, rubans, quantités base/finales, affichage responsive et tests de concurrence réseau.
+- Décisions : Les homonymes historiques affichent désormais les références catalogue et collection. CodeRabbit n’a produit aucun commentaire actionnable.
+- État : main est alignée sur origin/main au commit 6a4668a. Seul .agents/ non suivi, préexistant, reste local. npm run check, docker compose config et recette navigateur ont réussi.
+- Prochaine action : Recette fonctionnelle globale puis planification de la livraison v2 ; aucune modification du NAS n’a été réalisée.
+
 ## 2026-09-17 — stamp-app — Issue 9 commandes livrée et fusionnée
 
 - Contexte : Stamp App, branche main après fusion de la PR #21.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Main est protégé par PR et CI. Le flux du tableau est À préparer, Prêt, En cours, En revue, Terminé.
 - État : Branche codex/devops-foundations propre, commit 0f21985 poussé. PR #15 ouverte vers main, CI réussie.
 - Prochaine action : Relire puis fusionner la PR #15 ; démarrer ensuite l’issue #4 de conception métier.
-
-## 2026-09-16 — stamp-app — Migration SQLite fusionnée et démarrage local
-
-- Contexte : Finalisation de la migration SQLite versionnée et préparation de la reprise sur main.
-- Réalisé : La PR #1 est fusionnée dans main. La branche chore/database-migrations est conservée. L'application a été lancée localement avec db/dev.db puis arrêtée.
-- Décisions : Les remarques sur les collations et la reconstruction de tables avec clés étrangères sont reconnues mais reportées avant leur premier besoin concret.
-- État : main est synchronisée avec origin/main et l'arbre de travail est propre. Aucun serveur de développement ne tourne.
-- Prochaine action : Créer une branche depuis main pour la prochaine amélioration fonctionnelle, après avoir défini son besoin et sa priorité.
 <!-- sessions:end -->
