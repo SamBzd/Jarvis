@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-17 — stamp-app — Issue 7 — commandes kits
+
+- Contexte : Travail sur la branche codex/issue-7-commandes-kits, basée sur l’issue 6.
+- Réalisé : Le backend des commandes kits A/B/C est implémenté : composition, snapshots, tarifs, rubans, option, suppléments, règlement et suppression.
+- Décisions : L’issue 8 partira de l’issue 6 ; l’issue 9 attendra l’intégration de 7 et 8.
+- État : Les changements sont non committés. Les contrôles npm run check et docker compose config passent ; l’audit indépendant n’a trouvé aucun défaut concret.
+- Prochaine action : Relire puis committer l’issue 7, créer l’issue 8 depuis le commit 15d43b5, et préparer l’issue 9 après intégration.
+
 ## 2026-09-17 — stamp-app — Issue 6 API catalogues finalisée
 
 - Contexte : Implémentation de l’API sources, tarifs et archivage sur Stamp App.
