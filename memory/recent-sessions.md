@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-18 — stamp-app — Clôture après livraison du bilan des commandes
+
+- Contexte : Session consacrée à l’issue onze de Stamp App, dans le périmètre convenu avec Sam.
+- Réalisé : Implémentation, documentation et tests terminés. Les contrôles backend, frontend, build et configuration Docker ont réussi. Un audit indépendant en lecture seule n’a trouvé aucun défaut actionnable.
+- Décisions : Sam indique que la PR est fusionnée et que main est actualisée localement. Aucune opération supplémentaire sur le projet pendant la clôture.
+- État : Ce workspace reste sur la branche de l’issue, avec le travail committé. Main locale reste antérieure. Aucun changement suivi restant ; dossier préexistant non suivi préservé.
+- Prochaine action : À la reprise, vérifier la branche main et sa synchronisation avant de choisir la prochaine issue. Aucune validation du déploiement réel effectuée.
+
 ## 2026-09-18 — stamp-app — Issue #11 — bilan des commandes
 
 - Contexte : Branche codex/issue-11-bilan-commandes créée par l’automatisation planifiée pour travailler hors de main.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Les suppressions physiques sont bloquées ; la création et le règlement complets des kits restent dans l’issue 7.
 - État : Dépôt propre sur main. Le commit bc714f7 est poussé sur codex/issue-5-schema-import-clients ; la PR #17 vers main est ouverte.
 - Prochaine action : Relire puis fusionner la PR #17 ; supprimer sa branche après fusion si elle n’est plus utile.
-
-## 2026-09-16 — stamp-app — Alignement du backlog après validation métier
-
-- Contexte : Reprise du projet après fusion du cadrage, puis vérification de la cohérence des lots restants.
-- Réalisé : Les onze définitions d’issues ont été relues, corrigées et vérifiées sur GitHub. Un audit indépendant en lecture seule n’a trouvé aucun défaut bloquant.
-- Décisions : Le contrat validé reste la référence des futurs lots. L’intégration des deux lots d’interface reste souple ; aucune nouvelle décision produit.
-- État : Main propre et alignée sur sa référence distante. Aucun changement de code ni nouveau commit. Aucun accès ou changement de production. Les validations portaient sur le backlog, pas sur une implémentation.
-- Prochaine action : Commencer le prochain lot de schéma et d’outillage après instruction de Sam ; conserver les autorisations opérationnelles séparées.
 <!-- sessions:end -->
