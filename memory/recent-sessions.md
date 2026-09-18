@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-18 — stamp-app — Issue #11 — bilan des commandes
+
+- Contexte : Branche codex/issue-11-bilan-commandes créée par l’automatisation planifiée pour travailler hors de main.
+- Réalisé : Implémentation locale du bilan historique, adaptation de l’interface, tests ciblés et documentation ajoutées ; aucun changement n’est commité.
+- Décisions : Le bilan expose les montants en centimes, utilise le prix appliqué historique des kits et conserve le montant hors-kit enregistré.
+- État : Modifications dans backend, frontend, tests et documentation ; npm run check échoue encore sur app.test.js, catalogue-api.test.js et commandes-kit-api.test.js. Le dossier .agents reste non suivi et préexistant.
+- Prochaine action : Diagnostiquer les trois échecs backend, relancer npm run check et docker compose config, puis revoir le diff avant tout commit.
+
 ## 2026-09-17 — stamp-app — Issue 10 stocks fusionnée
 
 - Contexte : Stamp App sur main après fusion de la PR #22.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Le contrat validé reste la référence des futurs lots. L’intégration des deux lots d’interface reste souple ; aucune nouvelle décision produit.
 - État : Main propre et alignée sur sa référence distante. Aucun changement de code ni nouveau commit. Aucun accès ou changement de production. Les validations portaient sur le backlog, pas sur une implémentation.
 - Prochaine action : Commencer le prochain lot de schéma et d’outillage après instruction de Sam ; conserver les autorisations opérationnelles séparées.
-
-## 2026-09-16 — stamp-app — Fondations DevOps et cadrage métier
-
-- Contexte : Stabilisation de main avant les changements métier catalogues et commandes kits.
-- Réalisé : Les règles métier ont été documentées et fusionnées dans main. Les issues #4 à #14 et le tableau GitHub ont été créés. Un modèle de PR et une checklist NAS ont été ajoutés via la PR #15.
-- Décisions : Main est protégé par PR et CI. Le flux du tableau est À préparer, Prêt, En cours, En revue, Terminé.
-- État : Branche codex/devops-foundations propre, commit 0f21985 poussé. PR #15 ouverte vers main, CI réussie.
-- Prochaine action : Relire puis fusionner la PR #15 ; démarrer ensuite l’issue #4 de conception métier.
 <!-- sessions:end -->
