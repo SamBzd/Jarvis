@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-21 — stamp-app — Issue 12 fusionnée et epic UX structurée
+
+- Contexte : La recette métier confirme le socle fonctionnel mais révèle une refonte UX nécessaire avant déploiement.
+- Réalisé : Audit UX/UI consigné dans l’issue 25, avec découpage dans les issues 26 à 31. Recette reproductible, couverture renforcée et correction de l’historique cliente livrées par la PR 32. Revue traitée avec un test des libellés kits A, B, C et hors-kit.
+- Décisions : Direction visuelle atelier macOS chaleureux avec navigation générique avant la future mascotte. Epic déploiement mise en attente pendant la refonte UX/UI.
+- État : main est synchronisée sur 05caa23. Seul le dossier local non suivi .agents reste à préserver.
+- Prochaine action : Démarrer l’issue 26, socle visuel et navigation, sur une nouvelle branche dédiée.
+
 ## 2026-09-18 — stamp-app — Clôture après livraison du bilan des commandes
 
 - Contexte : Session consacrée à l’issue onze de Stamp App, dans le périmètre convenu avec Sam.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Les suppressions physiques sont bloquées ; la création et le règlement complets des kits restent dans l’issue 7.
 - État : Dépôt propre sur main, synchronisé au commit de fusion 09339d4. La PR #17 est fusionnée ; la branche dédiée peut être supprimée ultérieurement.
 - Prochaine action : Supprimer la branche codex/issue-5-schema-import-clients si elle n’est plus utile, puis choisir le prochain lot.
-
-## 2026-09-16 — stamp-app — Issue 5 : schéma cible et import clientes
-
-- Contexte : Implémentation de l’issue 5 sur une branche dédiée, sans intervention sur la base de production.
-- Réalisé : Migration cible, schéma catalogue/kit, snapshots, outil d’import atomique des clientes et documentation livrés.
-- Décisions : Les suppressions physiques sont bloquées ; la création et le règlement complets des kits restent dans l’issue 7.
-- État : Dépôt propre sur main. Le commit bc714f7 est poussé sur codex/issue-5-schema-import-clients ; la PR #17 vers main est ouverte.
-- Prochaine action : Relire puis fusionner la PR #17 ; supprimer sa branche après fusion si elle n’est plus utile.
 <!-- sessions:end -->
