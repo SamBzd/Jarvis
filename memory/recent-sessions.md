@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-22 — stamp-app — Issue 26 UI et navigation
+
+- Contexte : Stamp App : main a été mise à jour après la fusion de la PR #33, avec une base de développement locale réinitialisée pour la démonstration.
+- Réalisé : Le socle visuel et la navigation macOS sont livrés. Les corrections CodeRabbit ont été intégrées et poussées.
+- Décisions : La refonte UI plus large est reportée après l’implémentation des parcours métier restants.
+- État : main est synchronisée avec origin/main. Le dossier .agents demeure non suivi et préservé.
+- Prochaine action : Poursuivre les fonctionnalités métier, puis planifier la passe UI globale.
+
 ## 2026-09-21 — stamp-app — Issue 12 fusionnée et epic UX structurée
 
 - Contexte : La recette métier confirme le socle fonctionnel mais révèle une refonte UX nécessaire avant déploiement.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Main reste stable : l’issue 7 a été créée depuis l’issue 6 ; le merge attend l’adaptation de l’interface aux centimes.
 - État : Branche active codex/issue-7-commandes-kits, arbre propre. npm run check, docker compose config et deux audits API indépendants réussis.
 - Prochaine action : Implémenter l’issue 7 : création et validation des commandes kit.
-
-## 2026-09-16 — stamp-app — Issue 5 : schéma cible et import clientes
-
-- Contexte : Implémentation de l’issue 5 sur une branche dédiée, sans intervention sur la base de production.
-- Réalisé : Migration cible, schéma catalogue/kit, snapshots, outil d’import atomique des clientes et documentation livrés.
-- Décisions : Les suppressions physiques sont bloquées ; la création et le règlement complets des kits restent dans l’issue 7.
-- État : Dépôt propre sur main, synchronisé au commit de fusion 09339d4. La PR #17 est fusionnée ; la branche dédiée peut être supprimée ultérieurement.
-- Prochaine action : Supprimer la branche codex/issue-5-schema-import-clients si elle n’est plus utile, puis choisir le prochain lot.
 <!-- sessions:end -->
