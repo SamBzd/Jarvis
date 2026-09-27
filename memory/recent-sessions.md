@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-27 — stamp-app — Issue 27 — parcours Clientes fluidifié
+
+- Contexte : Travail sur la branche codex/issue-27-fluidifier-clientes pour traiter l’issue 27 et les reviews CodeRabbit et Codex.
+- Réalisé : Ajout des suggestions email, du formatage téléphone avec curseur stable, d’un formulaire compact, d’une recherche locale plus fiable et de mutations sans rechargement global. Tests de régression ajoutés.
+- Décisions : Conserver le sens métier Favori et le libellé visible unique « Favori » ; ne modifier ni l’API, ni le schéma, ni le déploiement.
+- État : Trois commits poussés. PR #34 fusionnée dans main via a28e9b3. Validations npm run check et docker compose config réussies. Branche locale propre hors .agents non suivi.
+- Prochaine action : Repartir d’une main actualisée pour la prochaine issue sans supprimer automatiquement la branche de travail.
+
 ## 2026-09-22 — stamp-app — Issue 26 UI et navigation
 
 - Contexte : Stamp App : main a été mise à jour après la fusion de la PR #33, avec une base de développement locale réinitialisée pour la démonstration.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : L’issue 8 partira de l’issue 6 ; l’issue 9 attendra l’intégration de 7 et 8.
 - État : Les changements sont non committés. Les contrôles npm run check et docker compose config passent ; l’audit indépendant n’a trouvé aucun défaut concret.
 - Prochaine action : Relire puis committer l’issue 7, créer l’issue 8 depuis le commit 15d43b5, et préparer l’issue 9 après intégration.
-
-## 2026-09-17 — stamp-app — Issue 6 API catalogues finalisée
-
-- Contexte : Implémentation de l’API sources, tarifs et archivage sur Stamp App.
-- Réalisé : Tarifs en centimes, publication/démotion, archivage clientes/catalogues, tests métier et documentation livrés. Quatre commits poussés sur codex/issue-6-api-catalogues.
-- Décisions : Main reste stable : l’issue 7 a été créée depuis l’issue 6 ; le merge attend l’adaptation de l’interface aux centimes.
-- État : Branche active codex/issue-7-commandes-kits, arbre propre. npm run check, docker compose config et deux audits API indépendants réussis.
-- Prochaine action : Implémenter l’issue 7 : création et validation des commandes kit.
 <!-- sessions:end -->
