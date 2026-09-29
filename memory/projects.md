@@ -36,7 +36,7 @@ Ce registre contient uniquement des métadonnées partageables. Rechercher l'emp
 - Organisation : solo
 - Instructions : `AGENTS.md`
 - Remote : `https://github.com/SamBzd/Stamp-app.git`
-- Dernière session : 2026-09-27
+- Dernière session : 2026-09-29
 - Emplacements :
   - `poste-professionnel-linux` : `/data/shared/projetPerso/Stamp-app`
 <!-- /project:stamp-app -->
