@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-29 — stamp-app — Issue 29 fusionnée sur main
+
+- Contexte : Session Stamp App consacrée à la composition guidée des commandes et au traitement du retour de revue Codex.
+- Réalisé : Répartition A/B automatique, contrôles moins/plus, résumé responsive, documentation et tests livrés. La PR 36 a été créée, auditée, corrigée puis fusionnée.
+- Décisions : C conserve sa règle d'au moins une feuille par papier. Un dépassement temporaire lors d'une édition indique désormais les feuilles en trop.
+- État : main est synchronisée avec origin/main au commit 7e56528. Aucun changement suivi restant ; .agents est non suivi et préexistant.
+- Prochaine action : Attendre la prochaine issue ou effectuer une recette métier supplémentaire si nécessaire.
+
 ## 2026-09-29 — stamp-app — Issue #28 — bibliothèque de papiers
 
 - Contexte : Implémentation complète de la bibliothèque de papiers et correction du sélecteur de collection, sur la branche dédiée.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Les retours pertinents ont été corrigés : avertissement de sortie, verrou de défilement partagé, création concurrente et message d’archivage.
 - État : Branche codex/issue-8-interface-catalogues synchronisée avec origin ; .agents/ est non suivie et préexistante.
 - Prochaine action : Revoir puis merger la PR #20 ; démarrer ensuite l’issue 9 depuis main à jour.
-
-## 2026-09-17 — stamp-app — Issue 7 — commandes kits
-
-- Contexte : Travail sur la branche codex/issue-7-commandes-kits, basée sur l’issue 6.
-- Réalisé : Le backend commandes kits A/B/C est livré : composition, snapshots, tarifs, rubans, option, suppléments, règlement, suppression, stocks et bilan.
-- Décisions : L’issue 8 partira de l’issue 6 ; l’issue 9 attendra l’intégration de 7 et 8.
-- État : Trois commits sont poussés : 7f9d6f5, aff54d3 et 628ba89. Arbre propre ; npm run check et docker compose config passent. Audit indépendant sans défaut concret.
-- Prochaine action : Créer l’issue 8 depuis 15d43b5 ; préparer l’issue 9 quand les issues 7 et 8 seront intégrées.
 <!-- sessions:end -->
