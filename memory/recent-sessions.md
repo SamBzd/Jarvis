@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-09-30 — stamp-app — Workflow fournitures fusionné
+
+- Contexte : Issue #30 finalisée, validée et fusionnée dans main après une PR dédiée.
+- Réalisé : Migration 0004 sans backfill, unités persistantes, alertes anonymes, synchronisation transactionnelle et API de workflow livrées. PR #37 fusionnée.
+- Décisions : Le Kanban frontend #31, le déploiement NAS et toute migration de données réelles restent hors périmètre.
+- État : main est synchronisée avec origin/main au commit b92e262. Seul .agents/ non suivi préexistant demeure dans l’arbre.
+- Prochaine action : Préparer la revue fonctionnelle, puis l’issue #31, avant tout déploiement prudent et documenté de main.
+
 ## 2026-09-29 — stamp-app — Issue 29 fusionnée sur main
 
 - Contexte : Session Stamp App consacrée à la composition guidée des commandes et au traitement du retour de revue Codex.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Aucune migration ni déploiement. Le NAS reste hors périmètre.
 - État : main est synchronisée avec origin/main au commit 7a5eb43. Seul .agents/ non suivi, préexistant, reste local.
 - Prochaine action : Recette fonctionnelle sur l’environnement de déploiement avant planification de la livraison v2.
-
-## 2026-09-17 — stamp-app — Issue 8 — catalogue et archivage
-
-- Contexte : Session Stamp App consacrée à l’issue 8, rebasée après l’intégration des issues 6 et 7.
-- Réalisé : Interface catalogue et archivage clientes livrés ; PR #20 rebasée, conflits documentaires résolus et retours de revue corrigés ; validations locales réussies : 72 tests backend, 5 tests frontend, build Vue et Compose.
-- Décisions : Les retours pertinents ont été corrigés : avertissement de sortie, verrou de défilement partagé, création concurrente et message d’archivage.
-- État : Branche codex/issue-8-interface-catalogues synchronisée avec origin ; .agents/ est non suivie et préexistante.
-- Prochaine action : Revoir puis merger la PR #20 ; démarrer ensuite l’issue 9 depuis main à jour.
 <!-- sessions:end -->
