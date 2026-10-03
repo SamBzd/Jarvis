@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-03 — stamp-app — Kanban des fournitures
+
+- Contexte : Implémentation et livraison de l’issue #31 sur une branche dédiée.
+- Réalisé : Le Kanban Fournitures à cinq colonnes, le bilan mensuel, les notifications et le sélecteur de mois ont été livrés. Les ajustements CodeRabbit de concurrence et d’accessibilité ont été intégrés.
+- Décisions : Les cartes n’affichent pas de bouton de déplacement ; elles restent activables au clic, au tactile et au clavier. Seul Terminer reste dans Traité.
+- État : La PR #38 est fusionnée ; main et origin/main pointent sur le merge. .agents/ reste non suivi et préexistant.
+- Prochaine action : Tester le Kanban sur la cible de déploiement avant la prochaine livraison.
+
 ## 2026-09-30 — stamp-app — Workflow fournitures fusionné
 
 - Contexte : Issue #30 finalisée, validée et fusionnée dans main après une PR dédiée.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Les homonymes historiques affichent désormais les références catalogue et collection. CodeRabbit n’a produit aucun commentaire actionnable.
 - État : main est alignée sur origin/main au commit 6a4668a. Seul .agents/ non suivi, préexistant, reste local. npm run check, docker compose config et recette navigateur ont réussi.
 - Prochaine action : Recette fonctionnelle globale puis planification de la livraison v2 ; aucune modification du NAS n’a été réalisée.
-
-## 2026-09-17 — stamp-app — Issue 9 commandes livrée et fusionnée
-
-- Contexte : Stamp App, branche main après fusion de la PR #21.
-- Réalisé : L’interface commandes kits et hors-kit de l’issue 9 est intégrée. Les retours Codex et CodeRabbit ont été corrigés : erreurs de détail isolées, fermeture pendant chargement et navigation radio clavier.
-- Décisions : Aucune migration ni déploiement. Le NAS reste hors périmètre.
-- État : main est synchronisée avec origin/main au commit 7a5eb43. Seul .agents/ non suivi, préexistant, reste local.
-- Prochaine action : Recette fonctionnelle sur l’environnement de déploiement avant planification de la livraison v2.
 <!-- sessions:end -->
