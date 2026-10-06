@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-06 — agroedge — Backlog validé et ordre d’intégration
+
+- Contexte : Session de cadrage AgroEdge consacrée à la préparation du travail de la semaine et à son organisation dans GitHub.
+- Réalisé : Trois Epics et vingt issues créées puis vérifiées. Leur contenu a été actualisé pour refléter le dernier ordre retenu.
+- Décisions : Valider et intégrer la branche existante avant de corriger les dettes sur une base commune, puis développer le chantier suivant. Automatisation de livraison reportée.
+- État : Dépôt local sur main, arbre propre, aucun changement de code, commit ou merge. Livraison de test visée vendredi, conditionnée aux validations et aux incertitudes restantes.
+- Prochaine action : Commencer par l’analyse des branches dans l’issue treize, préparer les vérifications puis demander les opérations Git nécessaires.
+
 ## 2026-10-03 — stamp-app — Kanban des fournitures
 
 - Contexte : Implémentation et livraison de l’issue #31 sur une branche dédiée.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Le bilan expose les montants en centimes, utilise le prix appliqué historique des kits et conserve le montant hors-kit enregistré.
 - État : Modifications dans backend, frontend, tests et documentation ; npm run check échoue encore sur app.test.js, catalogue-api.test.js et commandes-kit-api.test.js. Le dossier .agents reste non suivi et préexistant.
 - Prochaine action : Diagnostiquer les trois échecs backend, relancer npm run check et docker compose config, puis revoir le diff avant tout commit.
-
-## 2026-09-17 — stamp-app — Issue 10 stocks fusionnée
-
-- Contexte : Stamp App sur main après fusion de la PR #22.
-- Réalisé : Les stocks utilisent les snapshots de commandes, avec provenance historique, rubans, quantités base/finales, affichage responsive et tests de concurrence réseau.
-- Décisions : Les homonymes historiques affichent désormais les références catalogue et collection. CodeRabbit n’a produit aucun commentaire actionnable.
-- État : main est alignée sur origin/main au commit 6a4668a. Seul .agents/ non suivi, préexistant, reste local. npm run check, docker compose config et recette navigateur ont réussi.
-- Prochaine action : Recette fonctionnelle globale puis planification de la livraison v2 ; aucune modification du NAS n’a été réalisée.
 <!-- sessions:end -->
