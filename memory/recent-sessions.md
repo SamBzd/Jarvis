@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-07 — agroedge — Recette acceptée et intégration achevée
+
+- Contexte : Session AgroEdge consacrée à terminer la recette convenue et intégrer les corrections vérifiées sur une branche dédiée.
+- Réalisé : Recette acceptée par Sam avec réserves documentées. Retours Codex reproduits et corrigés, tests et compilation réussis. PR vingt-cinq fusionnée et issue quinze clôturée.
+- Décisions : Attendre la review Codex du dernier commit avant merge ; cette règle a été respectée. Le suivi complémentaire reste séparé du périmètre accepté.
+- État : Main local synchronisé avec le distant, sans modification suivie restante. Fichiers locaux non suivis et preuves conservés, aucune qualification production annoncée.
+- Prochaine action : Reprendre le cadrage du socle deux et des dettes sur la base intégrée, puis convenir des validations nécessaires avant toute livraison.
+
 ## 2026-10-06 — agroedge — Backlog validé et ordre d’intégration
 
 - Contexte : Session de cadrage AgroEdge consacrée à la préparation du travail de la semaine et à son organisation dans GitHub.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Sam indique que la PR est fusionnée et que main est actualisée localement. Aucune opération supplémentaire sur le projet pendant la clôture.
 - État : Ce workspace reste sur la branche de l’issue, avec le travail committé. Main locale reste antérieure. Aucun changement suivi restant ; dossier préexistant non suivi préservé.
 - Prochaine action : À la reprise, vérifier la branche main et sa synchronisation avant de choisir la prochaine issue. Aucune validation du déploiement réel effectuée.
-
-## 2026-09-18 — stamp-app — Issue #11 — bilan des commandes
-
-- Contexte : Branche codex/issue-11-bilan-commandes créée par l’automatisation planifiée pour travailler hors de main.
-- Réalisé : Implémentation locale du bilan historique, adaptation de l’interface, tests ciblés et documentation ajoutées ; aucun changement n’est commité.
-- Décisions : Le bilan expose les montants en centimes, utilise le prix appliqué historique des kits et conserve le montant hors-kit enregistré.
-- État : Modifications dans backend, frontend, tests et documentation ; npm run check échoue encore sur app.test.js, catalogue-api.test.js et commandes-kit-api.test.js. Le dossier .agents reste non suivi et préexistant.
-- Prochaine action : Diagnostiquer les trois échecs backend, relancer npm run check et docker compose config, puis revoir le diff avant tout commit.
 <!-- sessions:end -->
