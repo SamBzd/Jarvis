@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-08 — agroedge — Intégration confirmée et clôture du chantier courant
+
+- Contexte : Session de développement, diagnostic et consolidation documentaire du projet professionnel AgroEdge, suivie de la fusion réalisée par Sam.
+- Réalisé : Changements et correctifs enregistrés, publiés et intégrés. Documentation parcourue et actualisée avant fusion. Vérifications locales et retour utilisateur consignés dans le dépôt du projet.
+- Décisions : Reports convenus maintenus. Distinguer intégration du code, fonctionnement constaté et validation complète. Conserver les branches historiques sans nettoyage automatique.
+- État : Main local synchronisé avec le distant, arbre propre. Quelques repères documentaires décrivent encore la situation avant fusion.
+- Prochaine action : Actualiser ces repères puis compléter les validations restantes et reprendre le backlog selon les décisions déjà consignées dans le projet.
+
 ## 2026-10-07 — agroedge — Recette acceptée et intégration achevée
 
 - Contexte : Session AgroEdge consacrée à terminer la recette convenue et intégrer les corrections vérifiées sur une branche dédiée.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Direction visuelle atelier macOS chaleureux avec navigation générique avant la future mascotte. Epic déploiement mise en attente pendant la refonte UX/UI.
 - État : main est synchronisée sur 05caa23. Seul le dossier local non suivi .agents reste à préserver.
 - Prochaine action : Démarrer l’issue 26, socle visuel et navigation, sur une nouvelle branche dédiée.
-
-## 2026-09-18 — stamp-app — Clôture après livraison du bilan des commandes
-
-- Contexte : Session consacrée à l’issue onze de Stamp App, dans le périmètre convenu avec Sam.
-- Réalisé : Implémentation, documentation et tests terminés. Les contrôles backend, frontend, build et configuration Docker ont réussi. Un audit indépendant en lecture seule n’a trouvé aucun défaut actionnable.
-- Décisions : Sam indique que la PR est fusionnée et que main est actualisée localement. Aucune opération supplémentaire sur le projet pendant la clôture.
-- État : Ce workspace reste sur la branche de l’issue, avec le travail committé. Main locale reste antérieure. Aucun changement suivi restant ; dossier préexistant non suivi préservé.
-- Prochaine action : À la reprise, vérifier la branche main et sa synchronisation avant de choisir la prochaine issue. Aucune validation du déploiement réel effectuée.
 <!-- sessions:end -->
