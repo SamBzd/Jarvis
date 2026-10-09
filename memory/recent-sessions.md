@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-09 — stamp-app — Cadrage UI validé et issue créée
+
+- Contexte : Session consacrée au cadrage de la refonte visuelle avant la clôture de l’EPIC existante, sans lancement de réalisation.
+- Réalisé : Références locales préparées, documentation vérifiée, cadrage accepté par Sam et issue GitHub créée après autorisation explicite.
+- Décisions : La réalisation progressera par jalons avec validation visuelle explicite ; les succès techniques ne remplacent pas la recette avec Sam.
+- État : Branche main inchangée, documentation non committée, modifications préexistantes préservées. Vérifications de session réussies ; recette sur le poste cible encore à faire. Aucun déploiement effectué.
+- Prochaine action : Reprendre l’issue créée et convenir du premier lot de réalisation avant toute action Git sensible.
+
 ## 2026-10-08 — agroedge — Intégration confirmée et clôture du chantier courant
 
 - Contexte : Session de développement, diagnostic et consolidation documentaire du projet professionnel AgroEdge, suivie de la fusion réalisée par Sam.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : La refonte UI plus large est reportée après l’implémentation des parcours métier restants.
 - État : main est synchronisée avec origin/main. Le dossier .agents demeure non suivi et préservé.
 - Prochaine action : Poursuivre les fonctionnalités métier, puis planifier la passe UI globale.
-
-## 2026-09-21 — stamp-app — Issue 12 fusionnée et epic UX structurée
-
-- Contexte : La recette métier confirme le socle fonctionnel mais révèle une refonte UX nécessaire avant déploiement.
-- Réalisé : Audit UX/UI consigné dans l’issue 25, avec découpage dans les issues 26 à 31. Recette reproductible, couverture renforcée et correction de l’historique cliente livrées par la PR 32. Revue traitée avec un test des libellés kits A, B, C et hors-kit.
-- Décisions : Direction visuelle atelier macOS chaleureux avec navigation générique avant la future mascotte. Epic déploiement mise en attente pendant la refonte UX/UI.
-- État : main est synchronisée sur 05caa23. Seul le dossier local non suivi .agents reste à préserver.
-- Prochaine action : Démarrer l’issue 26, socle visuel et navigation, sur une nouvelle branche dédiée.
 <!-- sessions:end -->
