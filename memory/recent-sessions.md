@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-10 — stamp-app — Avancement frontend et livraison des lots validés
+
+- Contexte : Poursuite de la refonte visuelle de Stamp App avec Sam, après les validations des écrans précédents.
+- Réalisé : Les corrections Catalogues et Commandes puis le lot Papiers ont été réalisés, vérifiés, committés et poussés. L’issue de suivi a été actualisée avec les preuves et les étapes restantes.
+- Décisions : Les demandes de Sam ont guidé les ajustements. Aucun déploiement effectué. La prochaine phase reste à autoriser.
+- État : La branche de travail est synchronisée avec GitHub. Les validations techniques passent ; un dossier préexistant reste non suivi.
+- Prochaine action : Reprendre les formulaires et composants communs, puis le bilan et la recette finale sur Mac et Safari. Un point mineur d’accessibilité reste à décider.
+
 ## 2026-10-09 — stamp-app — Cadrage UI validé et issue créée
 
 - Contexte : Session consacrée au cadrage de la refonte visuelle avant la clôture de l’EPIC existante, sans lancement de réalisation.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Conserver le sens métier Favori et le libellé visible unique « Favori » ; ne modifier ni l’API, ni le schéma, ni le déploiement.
 - État : Trois commits poussés. PR #34 fusionnée dans main via a28e9b3. Validations npm run check et docker compose config réussies. Branche locale propre hors .agents non suivi.
 - Prochaine action : Repartir d’une main actualisée pour la prochaine issue sans supprimer automatiquement la branche de travail.
-
-## 2026-09-22 — stamp-app — Issue 26 UI et navigation
-
-- Contexte : Stamp App : main a été mise à jour après la fusion de la PR #33, avec une base de développement locale réinitialisée pour la démonstration.
-- Réalisé : Le socle visuel et la navigation macOS sont livrés. Les corrections CodeRabbit ont été intégrées et poussées.
-- Décisions : La refonte UI plus large est reportée après l’implémentation des parcours métier restants.
-- État : main est synchronisée avec origin/main. Le dossier .agents demeure non suivi et préservé.
-- Prochaine action : Poursuivre les fonctionnalités métier, puis planifier la passe UI globale.
 <!-- sessions:end -->
