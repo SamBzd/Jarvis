@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-11 — stamp-app — Stamp App : lot d’interface publié
+
+- Contexte : Sam a demandé la publication du travail validé, la mise à jour du suivi et la clôture de session.
+- Réalisé : Changements regroupés en trois commits cohérents et poussés. Tests, build et vérifications pertinentes réussis. Issue de suivi actualisée avec preuves et validations restantes.
+- Décisions : Conserver l’issue ouverte jusqu’à la recette finale sur Mac. Aucun déploiement autorisé ni réalisé.
+- État : Branche UI synchronisée ; aucun changement suivi restant. Outillage local non suivi préservé. Deux finitions mineures restent proposées sans application.
+- Prochaine action : Décider des finitions, effectuer la recette Safari et préparer ensuite la revue d’intégration. La livraison sur le NAS reste une étape distincte.
+
 ## 2026-10-10 — stamp-app — Avancement frontend et livraison des lots validés
 
 - Contexte : Poursuite de la refonte visuelle de Stamp App avec Sam, après les validations des écrans précédents.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Le renommage de papier reste exclusivement dans la bibliothèque. La migration v3 refuse les doublons après normalisation Unicode NFC et casse française.
 - État : Commits 841b249 et 99d922f poussés sur codex/issue-28-bibliotheque-papiers ; PR #35 ouverte et décrite. La démo locale a été arrêtée. .agents/ reste non suivi et non modifié.
 - Prochaine action : Attendre la CI et la revue finale de la PR #35 avant fusion.
-
-## 2026-09-27 — stamp-app — Issue 27 — parcours Clientes fluidifié
-
-- Contexte : Travail sur la branche codex/issue-27-fluidifier-clientes pour traiter l’issue 27 et les reviews CodeRabbit et Codex.
-- Réalisé : Ajout des suggestions email, du formatage téléphone avec curseur stable, d’un formulaire compact, d’une recherche locale plus fiable et de mutations sans rechargement global. Tests de régression ajoutés.
-- Décisions : Conserver le sens métier Favori et le libellé visible unique « Favori » ; ne modifier ni l’API, ni le schéma, ni le déploiement.
-- État : Trois commits poussés. PR #34 fusionnée dans main via a28e9b3. Validations npm run check et docker compose config réussies. Branche locale propre hors .agents non suivi.
-- Prochaine action : Repartir d’une main actualisée pour la prochaine issue sans supprimer automatiquement la branche de travail.
 <!-- sessions:end -->
