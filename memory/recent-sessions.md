@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-12 — stamp-app — Livraison UI intégrée et clôtures validées
+
+- Contexte : Fin de la stabilisation UI de Stamp App avant préparation de livraison.
+- Réalisé : Validations réussies, preuves documentées, commits poussés et PR 40 fusionnée dans main. Issues 39, 24 et 25 clôturées sur décision de Sam.
+- Décisions : Deux vérifications indépendantes Terra ne reproduisent pas le signalement de navigation. Les limites de recette connues restent consignées dans le projet.
+- État : Branche locale codex/issue-39-atelier-jalon-1 synchronisée au commit d64f183 ; aucun changement suivi en attente. Dossier .agents préexistant non suivi conservé. Aucun déploiement effectué.
+- Prochaine action : Reprendre la préparation de livraison via issue 13 ; demander une autorisation distincte avant tout déploiement.
+
 ## 2026-10-11 — stamp-app — Stamp App : lot d’interface publié
 
 - Contexte : Sam a demandé la publication du travail validé, la mise à jour du suivi et la clôture de session.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : C conserve sa règle d'au moins une feuille par papier. Un dépassement temporaire lors d'une édition indique désormais les feuilles en trop.
 - État : main est synchronisée avec origin/main au commit 7e56528. Aucun changement suivi restant ; .agents est non suivi et préexistant.
 - Prochaine action : Attendre la prochaine issue ou effectuer une recette métier supplémentaire si nécessaire.
-
-## 2026-09-29 — stamp-app — Issue #28 — bibliothèque de papiers
-
-- Contexte : Implémentation complète de la bibliothèque de papiers et correction du sélecteur de collection, sur la branche dédiée.
-- Réalisé : Page Papiers, création, recherche, renommage, archivage et restauration. Doublons normalisés, règles de conservation des papiers archivés et correction documentaire demandée par CodeRabbit.
-- Décisions : Le renommage de papier reste exclusivement dans la bibliothèque. La migration v3 refuse les doublons après normalisation Unicode NFC et casse française.
-- État : Commits 841b249 et 99d922f poussés sur codex/issue-28-bibliotheque-papiers ; PR #35 ouverte et décrite. La démo locale a été arrêtée. .agents/ reste non suivi et non modifié.
-- Prochaine action : Attendre la CI et la revue finale de la PR #35 avant fusion.
 <!-- sessions:end -->
