@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-13 — stamp-app — Petits correctifs livrés et fusionnés
+
+- Contexte : Session consacrée aux ajustements ergonomiques demandés par Sam dans Stamp App.
+- Réalisé : Correctifs réalisés, documentés et vérifiés. Les 165 tests, le build et la configuration Docker passent. Deux commits, b79c4ee et a5743dd, ont été poussés ; la PR 41 est fusionnée.
+- Décisions : Le dock reste à sa place d’origine. Sam demande de ne pas multiplier les audits pour les essais visuels.
+- État : Main local et distant alignés sur 5400177. Worktree petits-fix propre. Le dépôt principal conserve ses changements d’import clientes non committés. Aucun déploiement.
+- Prochaine action : Reprendre les changements d’import clientes ou le prochain petit correctif choisi par Sam.
+
 ## 2026-10-12 — stamp-app — Livraison UI intégrée et clôtures validées
 
 - Contexte : Fin de la stabilisation UI de Stamp App avant préparation de livraison.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Le Kanban frontend #31, le déploiement NAS et toute migration de données réelles restent hors périmètre.
 - État : main est synchronisée avec origin/main au commit b92e262. Seul .agents/ non suivi préexistant demeure dans l’arbre.
 - Prochaine action : Préparer la revue fonctionnelle, puis l’issue #31, avant tout déploiement prudent et documenté de main.
-
-## 2026-09-29 — stamp-app — Issue 29 fusionnée sur main
-
-- Contexte : Session Stamp App consacrée à la composition guidée des commandes et au traitement du retour de revue Codex.
-- Réalisé : Répartition A/B automatique, contrôles moins/plus, résumé responsive, documentation et tests livrés. La PR 36 a été créée, auditée, corrigée puis fusionnée.
-- Décisions : C conserve sa règle d'au moins une feuille par papier. Un dépassement temporaire lors d'une édition indique désormais les feuilles en trop.
-- État : main est synchronisée avec origin/main au commit 7e56528. Aucun changement suivi restant ; .agents est non suivi et préexistant.
-- Prochaine action : Attendre la prochaine issue ou effectuer une recette métier supplémentaire si nécessaire.
 <!-- sessions:end -->
