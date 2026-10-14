@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-14 — stamp-app — Livraison validée et documentation en review
+
+- Contexte : Session consacrée à la livraison, au ménage et à la documentation de Stamp App.
+- Réalisé : Livraison et nettoyage confirmés par Sam. Documentation consolidée, vérifications réussies, deux commits poussés et PR 44 ouverte pour review.
+- Décisions : Laisser la PR ouverte. Adresse cliente inchangée ; DNS local reporté. Sam réalise les interventions sur le NAS.
+- État : Branche codex/docs-livraison-consolidee synchronisée ; aucun changement suivi en attente. Dossier .agents préexistant non suivi préservé. Les détails privés restent dans les notes locales du projet.
+- Prochaine action : Reprendre la review documentaire, décider de son allègement avant fusion, puis traiter les suivis restants avec Sam.
+
 ## 2026-10-13 — stamp-app — Petits correctifs livrés et fusionnés
 
 - Contexte : Session consacrée aux ajustements ergonomiques demandés par Sam dans Stamp App.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Les cartes n’affichent pas de bouton de déplacement ; elles restent activables au clic, au tactile et au clavier. Seul Terminer reste dans Traité.
 - État : La PR #38 est fusionnée ; main et origin/main pointent sur le merge. .agents/ reste non suivi et préexistant.
 - Prochaine action : Tester le Kanban sur la cible de déploiement avant la prochaine livraison.
-
-## 2026-09-30 — stamp-app — Workflow fournitures fusionné
-
-- Contexte : Issue #30 finalisée, validée et fusionnée dans main après une PR dédiée.
-- Réalisé : Migration 0004 sans backfill, unités persistantes, alertes anonymes, synchronisation transactionnelle et API de workflow livrées. PR #37 fusionnée.
-- Décisions : Le Kanban frontend #31, le déploiement NAS et toute migration de données réelles restent hors périmètre.
-- État : main est synchronisée avec origin/main au commit b92e262. Seul .agents/ non suivi préexistant demeure dans l’arbre.
-- Prochaine action : Préparer la revue fonctionnelle, puis l’issue #31, avant tout déploiement prudent et documenté de main.
 <!-- sessions:end -->
