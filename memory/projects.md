@@ -40,3 +40,17 @@ Ce registre contient uniquement des métadonnées partageables. Rechercher l'emp
 - Emplacements :
   - `poste-professionnel-linux` : `/data/shared/projetPerso/Stamp-app`
 <!-- /project:stamp-app -->
+
+<!-- project:liste-noel-2026 -->
+## Liste de Noël 2026
+
+- Identifiant : `liste-noel-2026`
+- Nature : personnel
+- Organisation : solo
+- Instructions : aucun fichier `AGENTS.md` propre au projet à cette date
+- Remote : aucun
+- Dernière session : —
+- Emplacements :
+  - `poste-professionnel-linux` (dépôt du site) : `/home/sam/Documents/Codex/2026-10-21/sal/outputs/cabane`
+  - `poste-professionnel-linux` (dossier de travail partagé, hors dépôt Git) : `/data/shared/projetPerso/ListeNoel2026`
+<!-- /project:liste-noel-2026 -->
