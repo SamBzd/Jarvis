@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-21 — liste-noel-2026 — Premier décor de Noël validé
+
+- Contexte : Session consacrée au projet personnel de liste de Noël et à son premier décor visuel, après validation du cadrage par Sam.
+- Réalisé : Le premier décor consultable localement a été réalisé, vérifié sur ordinateur et présenté. Sam valide cette première version.
+- Décisions : Conserver les cinq catégories convenues, utiliser uniquement des ressources gratuites et poursuivre ensuite avec le parcours Voyage. Aucun audit supplémentaire demandé.
+- État : Travail local non committé, sans publication. Les animations et la validation sur téléphone restent à réaliser. Projet désormais référencé dans Jarvis.
+- Prochaine action : Reprendre avec l’ouverture du cadeau Voyage et la découverte de son univers, puis vérifier les interactions sur téléphone.
+
 ## 2026-10-14 — stamp-app — Livraison validée et documentation en review
 
 - Contexte : Session consacrée à la livraison, au ménage et à la documentation de Stamp App.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Valider et intégrer la branche existante avant de corriger les dettes sur une base commune, puis développer le chantier suivant. Automatisation de livraison reportée.
 - État : Dépôt local sur main, arbre propre, aucun changement de code, commit ou merge. Livraison de test visée vendredi, conditionnée aux validations et aux incertitudes restantes.
 - Prochaine action : Commencer par l’analyse des branches dans l’issue treize, préparer les vérifications puis demander les opérations Git nécessaires.
-
-## 2026-10-03 — stamp-app — Kanban des fournitures
-
-- Contexte : Implémentation et livraison de l’issue #31 sur une branche dédiée.
-- Réalisé : Le Kanban Fournitures à cinq colonnes, le bilan mensuel, les notifications et le sélecteur de mois ont été livrés. Les ajustements CodeRabbit de concurrence et d’accessibilité ont été intégrés.
-- Décisions : Les cartes n’affichent pas de bouton de déplacement ; elles restent activables au clic, au tactile et au clavier. Seul Terminer reste dans Traité.
-- État : La PR #38 est fusionnée ; main et origin/main pointent sur le merge. .agents/ reste non suivi et préexistant.
-- Prochaine action : Tester le Kanban sur la cible de déploiement avant la prochaine livraison.
 <!-- sessions:end -->
