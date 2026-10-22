@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-22 — liste-noel-2026 — Voyage et Bureau & tech disponibles
+
+- Contexte : Session consacrée à la liste de Noël personnelle et à la découverte des deux premiers univers cadeaux.
+- Réalisé : Les parcours Voyage et Bureau & tech sont réalisés, leurs visuels améliorés et les idées consolidées. Vérifications fonctionnelles et construction réussies.
+- Décisions : Conserver cinq catégories et les ressources gratuites, sans audit externe. Préserver les transitions et les rapprochements validés.
+- État : Travail local sur master, entièrement non committé ; aucun déploiement. Les performances sur téléphone physique restent à vérifier.
+- Prochaine action : Définir avec Sam le monde miniature du cadeau Jeux, puis réaliser sa première version avec les quatre idées déjà référencées.
+
 ## 2026-10-21 — liste-noel-2026 — Premier décor de Noël validé
 
 - Contexte : Session consacrée au projet personnel de liste de Noël et à son premier décor visuel, après validation du cadrage par Sam.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Attendre la review Codex du dernier commit avant merge ; cette règle a été respectée. Le suivi complémentaire reste séparé du périmètre accepté.
 - État : Main local synchronisé avec le distant, sans modification suivie restante. Fichiers locaux non suivis et preuves conservés, aucune qualification production annoncée.
 - Prochaine action : Reprendre le cadrage du socle deux et des dettes sur la base intégrée, puis convenir des validations nécessaires avant toute livraison.
-
-## 2026-10-06 — agroedge — Backlog validé et ordre d’intégration
-
-- Contexte : Session de cadrage AgroEdge consacrée à la préparation du travail de la semaine et à son organisation dans GitHub.
-- Réalisé : Trois Epics et vingt issues créées puis vérifiées. Leur contenu a été actualisé pour refléter le dernier ordre retenu.
-- Décisions : Valider et intégrer la branche existante avant de corriger les dettes sur une base commune, puis développer le chantier suivant. Automatisation de livraison reportée.
-- État : Dépôt local sur main, arbre propre, aucun changement de code, commit ou merge. Livraison de test visée vendredi, conditionnée aux validations et aux incertitudes restantes.
-- Prochaine action : Commencer par l’analyse des branches dans l’issue treize, préparer les vérifications puis demander les opérations Git nécessaires.
 <!-- sessions:end -->
