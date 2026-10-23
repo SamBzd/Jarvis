@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-23 — liste-noel-2026 — Revues des PR et mise en production
+
+- Contexte : Finaliser les revues demandées et publier le site personnel après validation de toutes les PR.
+- Réalisé : Trois anomalies corrigées et vérifiées. Les six PR ont reçu une revue Codex sans constat puis ont été fusionnées dans leur ordre de dépendance. Tests locaux, CI et publication distante validés.
+- Décisions : Dépôt privé et offre gratuite Vercel Hobby conservés. Aucun constat P3 à arbitrer.
+- État : Site en production, branche main synchronisée et propre au commit bc4260f. Aucun changement non committé ni blocage restant.
+- Prochaine action : Envisager une optimisation du chargement JavaScript ; aucune intervention supplémentaire décidée.
+
 ## 2026-10-22 — liste-noel-2026 — Voyage et Bureau & tech disponibles
 
 - Contexte : Session consacrée à la liste de Noël personnelle et à la découverte des deux premiers univers cadeaux.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Reports convenus maintenus. Distinguer intégration du code, fonctionnement constaté et validation complète. Conserver les branches historiques sans nettoyage automatique.
 - État : Main local synchronisé avec le distant, arbre propre. Quelques repères documentaires décrivent encore la situation avant fusion.
 - Prochaine action : Actualiser ces repères puis compléter les validations restantes et reprendre le backlog selon les décisions déjà consignées dans le projet.
-
-## 2026-10-07 — agroedge — Recette acceptée et intégration achevée
-
-- Contexte : Session AgroEdge consacrée à terminer la recette convenue et intégrer les corrections vérifiées sur une branche dédiée.
-- Réalisé : Recette acceptée par Sam avec réserves documentées. Retours Codex reproduits et corrigés, tests et compilation réussis. PR vingt-cinq fusionnée et issue quinze clôturée.
-- Décisions : Attendre la review Codex du dernier commit avant merge ; cette règle a été respectée. Le suivi complémentaire reste séparé du périmètre accepté.
-- État : Main local synchronisé avec le distant, sans modification suivie restante. Fichiers locaux non suivis et preuves conservés, aucune qualification production annoncée.
-- Prochaine action : Reprendre le cadrage du socle deux et des dettes sur la base intégrée, puis convenir des validations nécessaires avant toute livraison.
 <!-- sessions:end -->
