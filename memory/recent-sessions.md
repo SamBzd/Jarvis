@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-27 — agroedge — Environnement de travail et reprise AgroEdge
+
+- Contexte : Reprise du travail après la préparation d’une migration de l’environnement local.
+- Réalisé : Vérification de l’exécution native Windows et de l’état propre du dépôt. Comparaison des options Windows et WSL.
+- Décisions : Rester sous Windows pour poursuivre le projet ; conserver la préparation WSL comme solution de repli.
+- État : Aucun changement applicatif ni commit dans AgroEdge. La bascule WSL n’est pas active. Le bon fonctionnement observé ne garantit pas la disparition définitive du blocage précédent.
+- Prochaine action : Reprendre la préparation de l’issue consacrée à la maquette Edge Latency. Réexaminer WSL seulement si les blocages Windows reviennent.
+
 ## 2026-10-23 — liste-noel-2026 — Revues des PR et mise en production
 
 - Contexte : Finaliser les revues demandées et publier le site personnel après validation de toutes les PR.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : La réalisation progressera par jalons avec validation visuelle explicite ; les succès techniques ne remplacent pas la recette avec Sam.
 - État : Branche main inchangée, documentation non committée, modifications préexistantes préservées. Vérifications de session réussies ; recette sur le poste cible encore à faire. Aucun déploiement effectué.
 - Prochaine action : Reprendre l’issue créée et convenir du premier lot de réalisation avant toute action Git sensible.
-
-## 2026-10-08 — agroedge — Intégration confirmée et clôture du chantier courant
-
-- Contexte : Session de développement, diagnostic et consolidation documentaire du projet professionnel AgroEdge, suivie de la fusion réalisée par Sam.
-- Réalisé : Changements et correctifs enregistrés, publiés et intégrés. Documentation parcourue et actualisée avant fusion. Vérifications locales et retour utilisateur consignés dans le dépôt du projet.
-- Décisions : Reports convenus maintenus. Distinguer intégration du code, fonctionnement constaté et validation complète. Conserver les branches historiques sans nettoyage automatique.
-- État : Main local synchronisé avec le distant, arbre propre. Quelques repères documentaires décrivent encore la situation avant fusion.
-- Prochaine action : Actualiser ces repères puis compléter les validations restantes et reprendre le backlog selon les décisions déjà consignées dans le projet.
 <!-- sessions:end -->
