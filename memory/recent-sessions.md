@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-28 — liste-noel-2026 — Laboratoire Bureau et tech livré
+
+- Contexte : Reprise du site personnel de Noël pour finaliser le cadeau Bureau et tech après les univers précédents.
+- Réalisé : Refonte validée par Sam, références décoratives ajoutées, tests et compilation réussis. Les audits indépendants et la revue Codex ne signalent aucun défaut actionnable. Modifications committées, poussées et fusionnées dans la PR 9.
+- Décisions : Conserver la planche rose validée et les références décoratives retenues pour le laboratoire.
+- État : Branche main propre et synchronisée avec origin/main au commit 2125cf9. Aucun changement local restant, aucun blocage connu.
+- Prochaine action : Contrôler le rendu sur téléphone physique lors de la prochaine reprise, puis choisir avec Sam le prochain cadeau à améliorer.
+
 ## 2026-10-28 — agroedge — AgroEdge : integration et bilan de session
 
 - Contexte : Reprise du projet professionnel avec Sam pour terminer une version fonctionnelle deja validee.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Conserver l’issue ouverte jusqu’à la recette finale sur Mac. Aucun déploiement autorisé ni réalisé.
 - État : Branche UI synchronisée ; aucun changement suivi restant. Outillage local non suivi préservé. Deux finitions mineures restent proposées sans application.
 - Prochaine action : Décider des finitions, effectuer la recette Safari et préparer ensuite la revue d’intégration. La livraison sur le NAS reste une étape distincte.
-
-## 2026-10-10 — stamp-app — Avancement frontend et livraison des lots validés
-
-- Contexte : Poursuite de la refonte visuelle de Stamp App avec Sam, après les validations des écrans précédents.
-- Réalisé : Les corrections Catalogues et Commandes puis le lot Papiers ont été réalisés, vérifiés, committés et poussés. L’issue de suivi a été actualisée avec les preuves et les étapes restantes.
-- Décisions : Les demandes de Sam ont guidé les ajustements. Aucun déploiement effectué. La prochaine phase reste à autoriser.
-- État : La branche de travail est synchronisée avec GitHub. Les validations techniques passent ; un dossier préexistant reste non suivi.
-- Prochaine action : Reprendre les formulaires et composants communs, puis le bilan et la recette finale sur Mac et Safari. Un point mineur d’accessibilité reste à décider.
 <!-- sessions:end -->

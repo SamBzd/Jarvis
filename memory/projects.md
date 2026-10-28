@@ -49,7 +49,7 @@ Ce registre contient uniquement des métadonnées partageables. Rechercher l'emp
 - Organisation : solo
 - Instructions : aucun fichier `AGENTS.md` propre au projet à cette date
 - Remote : aucun
-- Dernière session : 2026-10-23
+- Dernière session : 2026-10-28
 - Emplacements :
   - `poste-professionnel-linux` (dépôt du site) : `/home/sam/Documents/Codex/2026-10-21/sal/outputs/cabane`
   - `poste-professionnel-linux` (dossier de travail partagé, hors dépôt Git) : `/data/shared/projetPerso/ListeNoel2026`
