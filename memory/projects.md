@@ -23,7 +23,7 @@ Ce registre contient uniquement des métadonnées partageables. Rechercher l'emp
 - Organisation : solo
 - Instructions : `AGENTS.md`
 - Remote : non renseigné
-- Dernière session : 2026-10-27
+- Dernière session : 2026-10-28
 - Emplacements :
   - `poste-professionnel-linux` : `/home/sam/edge/app/AgroEdge`
 <!-- /project:agroedge -->

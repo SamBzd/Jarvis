@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-10-28 — agroedge — AgroEdge : integration et bilan de session
+
+- Contexte : Reprise du projet professionnel avec Sam pour terminer une version fonctionnelle deja validee.
+- Réalisé : Le travail a ete enregistre, publie et integre apres verification des retours de revue. La branche principale locale a ete synchronisee.
+- Décisions : La version actuelle est acceptee pour son premier jalon. Les evolutions suivantes seront cadrees separement avant tout nouveau developpement.
+- État : Le depot est sur main. Six fichiers documentaires restent modifies localement, sans commit ni publication. Aucun nettoyage de branche effectue.
+- Prochaine action : Reprendre par la verification du depot, sauvegarder le bilan documentaire sur instruction, puis cadrer la prochaine evolution avec Sam.
+
 ## 2026-10-27 — agroedge — Environnement de travail et reprise AgroEdge
 
 - Contexte : Reprise du travail après la préparation d’une migration de l’environnement local.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Les demandes de Sam ont guidé les ajustements. Aucun déploiement effectué. La prochaine phase reste à autoriser.
 - État : La branche de travail est synchronisée avec GitHub. Les validations techniques passent ; un dossier préexistant reste non suivi.
 - Prochaine action : Reprendre les formulaires et composants communs, puis le bilan et la recette finale sur Mac et Safari. Un point mineur d’accessibilité reste à décider.
-
-## 2026-10-09 — stamp-app — Cadrage UI validé et issue créée
-
-- Contexte : Session consacrée au cadrage de la refonte visuelle avant la clôture de l’EPIC existante, sans lancement de réalisation.
-- Réalisé : Références locales préparées, documentation vérifiée, cadrage accepté par Sam et issue GitHub créée après autorisation explicite.
-- Décisions : La réalisation progressera par jalons avec validation visuelle explicite ; les succès techniques ne remplacent pas la recette avec Sam.
-- État : Branche main inchangée, documentation non committée, modifications préexistantes préservées. Vérifications de session réussies ; recette sur le poste cible encore à faire. Aucun déploiement effectué.
-- Prochaine action : Reprendre l’issue créée et convenir du premier lot de réalisation avant toute action Git sensible.
 <!-- sessions:end -->
