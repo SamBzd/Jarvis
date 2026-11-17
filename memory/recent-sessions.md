@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-11-17 — stamp-app — Dépôt local retrouvé et préparé pour la reprise
+
+- Contexte : Le chemin de travail habituel était devenu inaccessible après le remontage du volume partagé sur Fedora.
+- Réalisé : Les journaux et une vérification isolée ont confirmé que le dépôt était masqué par le montage. Sam a récupéré le dépôt complet et Git a reconnu la copie.
+- Décisions : Reprendre depuis la copie locale dans un nouveau chat Codex associé au bon dossier.
+- État : La copie se trouve dans ~/projets/Stamp-app. Les fichiers suivis sont propres et les fichiers locaux ont été préservés.
+- Prochaine action : Décrire le bug, confirmer sa reproduction et valider le correctif local dans la nouvelle session.
+
 ## 2026-10-28 — liste-noel-2026 — Laboratoire Bureau et tech livré
 
 - Contexte : Reprise du site personnel de Noël pour finaliser le cadeau Bureau et tech après les univers précédents.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Deux vérifications indépendantes Terra ne reproduisent pas le signalement de navigation. Les limites de recette connues restent consignées dans le projet.
 - État : Branche locale codex/issue-39-atelier-jalon-1 synchronisée au commit d64f183 ; aucun changement suivi en attente. Dossier .agents préexistant non suivi conservé. Aucun déploiement effectué.
 - Prochaine action : Reprendre la préparation de livraison via issue 13 ; demander une autorisation distincte avant tout déploiement.
-
-## 2026-10-11 — stamp-app — Stamp App : lot d’interface publié
-
-- Contexte : Sam a demandé la publication du travail validé, la mise à jour du suivi et la clôture de session.
-- Réalisé : Changements regroupés en trois commits cohérents et poussés. Tests, build et vérifications pertinentes réussis. Issue de suivi actualisée avec preuves et validations restantes.
-- Décisions : Conserver l’issue ouverte jusqu’à la recette finale sur Mac. Aucun déploiement autorisé ni réalisé.
-- État : Branche UI synchronisée ; aucun changement suivi restant. Outillage local non suivi préservé. Deux finitions mineures restent proposées sans application.
-- Prochaine action : Décider des finitions, effectuer la recette Safari et préparer ensuite la revue d’intégration. La livraison sur le NAS reste une étape distincte.
 <!-- sessions:end -->
