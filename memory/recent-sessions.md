@@ -3,6 +3,14 @@
 FIFO global limité aux dix dernières clôtures. Les entrées sont classées de la plus récente à la plus ancienne et contiennent chacune 80 à 120 mots.
 
 <!-- sessions:start -->
+## 2026-11-20 — stamp-app — Clôture Stamp App et calendrier
+
+- Contexte : Clôture de la session Stamp App, avec documentation associée du calendrier de l’Avent Maman 2026.
+- Réalisé : Le chantier #46 est terminé, fusionné et clôturé. Les validations ont été confirmées et les procédures sont consignées dans les deux dépôts.
+- Décisions : Les sources de vérité restent les documents propres à chaque projet ; aucun travail supplémentaire n’est lancé en clôture.
+- État : Les changements locaux préexistants de Sam sont préservés. Les mises à jour documentaires sont commitées et poussées. Le #45 reste non livré.
+- Prochaine action : Reprendre le #45 depuis l’état Git réel et les instructions du projet, puis préparer sa recette avant livraison.
+
 ## 2026-11-17 — stamp-app — Dépôt local retrouvé et préparé pour la reprise
 
 - Contexte : Le chemin de travail habituel était devenu inaccessible après le remontage du volume partagé sur Fedora.
@@ -74,12 +82,4 @@ FIFO global limité aux dix dernières clôtures. Les entrées sont classées de
 - Décisions : Le dock reste à sa place d’origine. Sam demande de ne pas multiplier les audits pour les essais visuels.
 - État : Main local et distant alignés sur 5400177. Worktree petits-fix propre. Le dépôt principal conserve ses changements d’import clientes non committés. Aucun déploiement.
 - Prochaine action : Reprendre les changements d’import clientes ou le prochain petit correctif choisi par Sam.
-
-## 2026-10-12 — stamp-app — Livraison UI intégrée et clôtures validées
-
-- Contexte : Fin de la stabilisation UI de Stamp App avant préparation de livraison.
-- Réalisé : Validations réussies, preuves documentées, commits poussés et PR 40 fusionnée dans main. Issues 39, 24 et 25 clôturées sur décision de Sam.
-- Décisions : Deux vérifications indépendantes Terra ne reproduisent pas le signalement de navigation. Les limites de recette connues restent consignées dans le projet.
-- État : Branche locale codex/issue-39-atelier-jalon-1 synchronisée au commit d64f183 ; aucun changement suivi en attente. Dossier .agents préexistant non suivi conservé. Aucun déploiement effectué.
-- Prochaine action : Reprendre la préparation de livraison via issue 13 ; demander une autorisation distincte avant tout déploiement.
 <!-- sessions:end -->
